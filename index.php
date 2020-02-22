@@ -42,7 +42,12 @@ A
 
 
 echo("FUE REALIZADO POR GIOVANNY SANCHEZ ");
-
+/*1.Hacer un programa en PHP que permita mostrar en pantalla la suma, resta, multiplicación, de dos números enteros
+almacenados en 2 variables diferentes. Conserve el siguiente formato de impresión:
+La suma de () + () = ()
+La resta de ()-()= ()
+La multiplicación de ()x() =()
+La división de ()/()=()*/
 
 echo "<br>";
 echo("PUNTO 1");
