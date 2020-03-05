@@ -65,8 +65,49 @@ echo("<br> la resta de:".$n1."-".$n2."=".$resta);
 echo("<br> la multiplicacion de:".$n1."*".$n2."=".$multiplicacion);
 echo("<br> la divicion de:".$n1."/".$n2."=".$divicion);
 
+echo "<br>","<br>","<br>";
+echo("PUNTO 2");
+/*
+2. El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus usuarios calcular el índice de
+masa corporal, basado en la formula 𝐈𝐌𝐂 =
+𝑷𝒆𝒔𝒐
+𝑨𝒍𝒕𝒖𝒓𝒂𝒙𝑨𝒍𝒕𝒖𝒓𝒂
+La clasificación del IMC es la siguiente:
+ IMC <= 18,4 (Insuficiencia de peso)
+ 18,5<=IMC<=24,9 (Peso normal)
+ 25<=IMC<=29,9 (Sobrepeso)
+ 30<=IMC<=34,9 (Obesidad 1)
+ 35<=IMC<=39,9 (Obesidad 2)
+ IMC>=40 (Obesidad 3)
+Ejecute su programa para un usuario cuyo peso es de 85KG y cuya estatura es de
+1.78m y muestre en pantalla el resultado obtenido*/
 
+$peso=85;
+$altura=1.78;
+$IMC="";
+echo "<br>";
+echo("El  peso del usuario es de:".$peso. " KG ");
+echo "<br>";
+echo("La altura del usuario es de:".$altura." CM ");
+echo "<br>";
+echo ("El IMC es de : ".$IMC );
+$IMC=$peso/($altura*$altura);
 
+    if ($IMC <= 18.4) {
+        echo "Insuficiencia de peso";
+    } elseif ($IMC>=18.5 && $IMC<=24.9) {
+        echo "Peso normal ";
+    } elseif ($IMC >=25  && $IMC<=29.9) {
+        echo "Sobrepeso ";
+    }elseif  ($IMC>=30 && $IMC<=34.9){
+        echo "Obesidad 1";
+    }elseif   ($IMC >=35 && $IMC<=39.9) {
+        echo  "Obesidad 2  ";
+    }elseif    ($IMC>=40) {
+        echo ("Obesidad 3  ");
+    }
+  
+    
 
 
 ?>
