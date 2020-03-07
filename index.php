@@ -106,8 +106,80 @@ $IMC=$peso/($altura*$altura);
     }elseif    ($IMC>=40) {
         echo ("Obesidad 3  ");
     }
-  
+    echo "<br>","<br>","<br>";
+    echo("PUNTO 3");
+    echo "<br>";  
+    /*Hacer un programa en PHP para la tienda Spring Step que tiene una promoción de descuento para vender al mayor, esta
+    dependerá del número de zapatos que se compren. Si son 3 pares se les dará un 10% de descuento sobre el total de la
+    compra; si el número de zapatos es mayor 3 pares pero menor o igual de 5 pares, se le otorga un 20% de descuento; y si son
+    más 5 pares de zapatos se otorgará un 40% de descuento. Defina la cantidad de variables que necesite, el precio de cada
+    pare de zapatos =$150.000 y establezca el valor total de una compra de 5 pares de zapatos.*/
+    echo("Promocion Descuentos <br>");
     
+    $Numzapatos=5;
+    $Precio=150000;
+    $ValorTotal=0;
+    $Valorneto=0;
+    
+    if ($Numzapatos ==3){
+        $ValorTotal=$Numzapatos*$Precio;
+        $Valorneto=$ValorTotal*(10/100);
+        $neto=$ValorTotal-$Valorneto;
+        echo("El valor  es : $ ".$ValorTotal. " El descuento fue del 10% de : ".$Valorneto."<br>"."El valor total a pagar es de :".$neto);
+    }elseif($Numzapatos >3 && $Numzapatos <=5 ){
+        $ValorTotal=$Numzapatos*$Precio;
+        $Valorneto=$ValorTotal*(20/100);
+        $neto=$ValorTotal-$Valorneto;
+        echo("El valor  es : $ ".$ValorTotal. " El descuento fue del 20% de : ".$Valorneto."<br>"."El valor total a pagar es de :".$neto);
+    }elseif ($Numzapatos >5){
+        $ValorTotal=$Numzapatos*$Precio;
+        $Valorneto=$ValorTotal*(40/100);
+        $neto=$ValorTotal-$Valorneto;
+        echo("El valor  es : $ ".$ValorTotal. " El descuento fue del 40% de : ".$Valorneto."<br>"."El valor total a pagar es de :".$neto);
+    }
+/*4. Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que si
+trabaja 40 horas o menos, se le pagará $20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le
+pagarán a $25 por hora. Ejecute su código para calcular el salario con 36 horas trabajadas.*/
+
+    echo "<br>","<br>","<br>";
+    echo("PUNTO 4");
+    echo "<br>"; 
+    echo("Sueldo Mensual <br>");
+$Horastrab=36;
 
 
-?>
+if($Horastrab<=40){
+    $Pagosemanal=$Horastrab*20000;
+    echo("Señor usuario su pago semanal es de : $Pagosemanal");
+}else{
+    $Pagosemanal=$Horastrab*25000;
+    cho("Señor usuario su pago semanal es de : $Pagosemanal");
+}
+
+/*5.Bancolombia contrata sus servicios de desarrollador para realizar un programa en PHP que permita almacenar
+información de nombre, teléfono dirección y salario de 5 usuarios de una sucursal llamada sucursal A. Además, su
+programa debe estar en la capacidad de sumar todos los salarios de los usuarios de la sucursal A en una sola variable
+llamada $sumatoriaSalarios y así poder comparar dicho valor con las sucursales B cuyo valor de salarios mensual es de
+20.000.000 y la sucursal C cuyo valor de salarios mensuales es de 15.000.000. Permita que su código muestre cual sucursal
+tiene la mejor sumatoria de salarios y además muestre en pantalla la información completa de los 5 usuarios de la sucursal
+A
+*/
+echo "<br>","<br>","<br>";
+    echo("PUNTO 5");
+    echo "<br>"; 
+echo("Almacenar Datos <br>");
+$sumatoriaSalarios=0;
+$salrio=
+$sucursalB=20000000;
+$sucursalC=15000000;
+$usuariossucursalA=array(
+    'usuario1'=>array('nombre'=>"Juan",'telefono'=>123456789,'direcion'=>"calle 3",'salario'=>1200000),
+    'usuario2'=>array('nombre'=>"Matilde",'telefono'=>123453451,'direcion'=>"calle 5",'salario'=>1300000),
+    'usuario3'=>array('nombre'=>"Simon",'telefono'=>123455432,'direcion'=>"calle 6",'salario'=>1250000),
+    'usuario4'=>array('nombre'=>"Alenjandro",'telefono'=>123451234,'direcion'=>"calle 7",'salario'=>1100000),
+    'usuario5'=>array('nombre'=>"María",'telefono'=>123451974,'direcion'=>"calle 9",'salario'=>1000000)
+);{
+    print_r(
+        $usuariossucursalA['salrio']=$usuariossucursalA;
+}
+
